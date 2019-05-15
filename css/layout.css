@@ -1,0 +1,270 @@
+/*
+спитати: чи можна задавати колір подібно до стилів тексту?
+що робити з трекінгом?
+
+3. иконки для меню
+скрипт для появления полных версий надписей 
+
+лого поменять цвет и подвинуть к центру
+меню пофиксить чтоы при скролле было, и чтобы гамбургер норм выглядел
+анимацию появления на таймлайн
+третий маршрут построить
+первый экран: сделать текст в половинке, как в следующих
+
+мобильная версия
+почистить код от комментариев
+выложить на гитхаб
+
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /*    overflow-x: hidden;*/
+    background-color: rgb(21, 0, 76);
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+section {
+    min-height: 300px
+}
+
+header,
+#s4 {
+    background-color: white;
+    color: rgb(21, 0, 76);
+}
+
+header {
+    color: rgb(21, 0, 76) ;
+    position: relative;
+}
+
+.hero {
+    margin: left;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    width: 500px;
+    max-width: 80%;
+    /*        background-color: red;*/
+}
+
+#herowrap {
+    position: relative;
+    display: flex;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    text-align: left;
+    color: rgb(21, 0, 76);
+    padding-top: 60px;
+    /*    padding-bottom: 50px;*/
+    padding-left: 120px;
+    padding-right: 120px;
+    min-height: 500px;
+    /*        background-color: aqua;*/
+    max-width: 1200px;
+    align-items: flex-end;
+    margin: auto;
+}
+
+#s0 {
+    /*    background-image: url("../img/kapusta_1600x734.jpg");*/
+    /*    background-size: contain;*/
+    /*    background-position:top right;*/
+    position: relative;
+    /*    display: flex;*/
+    /*    background-repeat: no-repeat;*/
+    /*    background-position: top;*/
+    /*    overflow-x: hidden;*/
+}
+
+.kapusta > img {
+    /*    visibility: hidden;*/
+    display: flex;
+    width: 100%;
+padding-bottom: 200px;
+}
+
+
+#s1 {
+    /*    background-image: url("../img/zhigul_1600x1351.jpg");*/
+    /*    background-size: contain;*/
+    position: relative;
+    /*    display: flex;*/
+    /*    overflow-x: hidden;*/
+    /*    background-repeat: no-repeat;*/
+    /*    background-position: top;*/
+/*    padding-bottom: 120px;*/
+}
+
+.d_w{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.d_wrap{
+    display: flex;
+        width: 80%;
+    max-width: 1200px;
+    margin: auto;
+/*    flex-flow: row wrap;*/
+    
+    justify-content: space-between;
+/*    background-color: palevioletred;*/
+}
+
+.descript_wrap{
+/*
+    
+    display: flex;
+    flex-flow: wrap;
+    flex-grow: 1;
+*/
+}
+
+
+.descript {
+    /*    background-color: aqua;*/
+    width: 40%;
+/*    background-color: saquamarine;*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+    display: flex;
+    flex-flow:  row wrap;
+/*        flex-grow: 1;*/
+
+}
+
+.descript div{
+/*    width: 70%;*/
+/*    margin: auto;*/
+}
+
+.descript_txt{
+    display: flex;
+    flex-flow: wrap column;
+    align-self: flex-end;
+/*    width: 60%;*/
+/*    margin-bottom: 120px;*/
+/*    margin-right: 20px;*/
+    margin-bottom: 120px;
+/*    background-color: greenyellow*/
+}
+
+.d_t{
+/*    background-color: red;*/
+/*    align-self: center;*/
+/*    width: 100%;*/
+}
+
+.descript_inside {
+    margin: auto;
+/*     display: flex;*/
+/*    flex-flow: wrap;*/
+/*    width: 60%;*/
+}
+
+.descript_inside > .table {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.descript_inside > .table > div {
+    /*    background-color: hotpink;*/
+}
+
+#l1,
+#l2,
+#l3 > span {
+/*        background-color: aquamarine;*/
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.descript_inside button {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    max-width: 250px;
+}
+
+footer {
+    padding-top: 60px;
+    width: 300px;
+    max-width: 80%;
+    margin: auto;
+    /*    background-color: aqua;*/
+    margin-bottom: 120px;
+}
+
+footer > .logos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+footer img {
+    height: 50px;
+}
+
+footer h3 {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    #s1 {
+        height: 800px;
+        margin-bottom: 50px;
+    }
+
+    .hero {
+        /*  height: 300px;*/
+        /*     width: 100%;*/
+    }
+
+    #herowrap {
+        /*    height: 300px;*/
+        /*        padding-top: 50px;*/
+    }
+
+    .descript {
+        /*    background-color: aqua;*/
+        width: 100%;
+        /*    position: relative;*/
+        /*        top: 0;*/
+    }
+
+    .descript_inside {
+        margin: auto;
+        width: 60%;
+    }
+
+
+
+    @media screen and (max-width: 600px) {
+        #s1 {
+            height: 600px;
+            margin-bottom: 50px;
+        }
+
+        #herowrap {
+            padding-top: 40px;
+            /*    padding-bottom: 50px;*/
+            padding-left: 40px;
+            padding-right: 40px;
+            min-height: 500px;
+        }
+
+    }

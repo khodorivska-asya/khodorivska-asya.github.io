@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.empty{
+    min-height: 100vh;
+}
+
+header .block {
+    background-color: royalblue;
+    color: aliceblue;
+    font-family: sans-serif;
+    margin: auto;
+    max-width: 600px;
+    padding: 40px;
+    width: 80%; 
+    border-radius: 15px;
+}
+
+h1{
+    line-height: 2;
+    font-size: 4em;
+}
+
+header{
+    background-color: darkblue;
+    display: flex;
+    min-height: 100vh;
+    padding: 15px;
+}

@@ -1,0 +1,147 @@
+#s4 {
+    padding: 120px 0px 240px 0px;
+/*    width: 80%;*/
+    background-image:url(/img/tree_1600x896.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+
+
+.routes_wrap {
+/*    background-color: aqua;*/
+    display: flex;
+    flex-flow: wrap row;
+    margin: auto;
+    width: 80%;
+    max-width: 1200px;
+    justify-content: space-between;
+/*    align-self: center;*/
+}
+
+.r_wrap {
+/*    margin: auto;*/
+    background-color: rgb(21, 0, 76);
+    color: white;
+    display: flex;
+    width: 30%;
+    min-width: 350px;
+    padding: 40px 40px 20px 40px;
+/*        flex-flow: wrap;*/
+/*    align-items: center;*/
+}
+
+.route {
+    display: flex;
+    flex-flow: wrap;
+    /*    background-color: greenyellow;*/
+    min-width: 250px;
+    margin: auto;
+}
+
+#s4 .name *{
+    text-align: center;
+}
+
+#s4 .name{
+    margin-bottom: 60px;
+}
+
+.route .icon img {
+    width: 150px;
+    border-radius: 100%;
+    border: solid white 5px;
+}
+
+.route .icon {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.route .start,
+.fin {
+/*        background-color: palevioletred;*/
+    display: flex;
+/*    margin-bottom: 25px;*/
+}
+
+.route .start0,
+.fin0 {
+    width: 20%;
+    font-variant-caps: all-small-caps;
+/*    text-transform:uppercase;*/
+/*        background-color: pink;*/
+}
+
+.route .start1,
+.fin1 {
+/*        background-color: pink;*/
+        text-align: left;
+    display: flex;
+    width: 70%;
+}
+
+.route .space {
+    /*    background-color: red;*/
+    width: 10%;
+}
+
+.route button div {
+    display: flex;
+    flex-flow: row wrap;
+    /*    background-color: aqua;    */
+}
+
+.route button div p {
+    text-align: left;
+    padding-left: 10px;
+    border-left: 1px solid white;
+}
+
+.route button {
+    display: flex;
+    align-items: center;
+}
+
+.route button img {
+    display: flex;
+    flex-flow: wrap;
+    height: 45px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .r_wrap{
+/*        flex-flow: column;*/
+     margin:auto;
+/*        justify-content: center;*/
+}
+
+}
+
+@media screen and (max-width: 960px){
+    .r_wrap{
+    width: 33%;
+    min-width: 250px;
+    padding: 40px 40px 20px 40px;
+}
+
+    #s4 {
+    padding: 120px 20px 240px 20px;
+    }
+    
+    #s4 button{
+        margin: auto;
+        padding: 10px;
+/*        flex-flow: */
+    }
+   
+    .route button div p {
+    padding-left: 5px;
+}
+
+.route button img {
+    height: 30px;
+    padding-right: 5px;
+}
+}
